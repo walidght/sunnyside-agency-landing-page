@@ -11,3 +11,50 @@ body {
 a {
     text-decoration: none;
 }
+
+@media (max-width: 750px) {
+    :root {
+        font-size: 12px;
+    }
+
+    #hero-container h1 {
+        max-width: 80%;
+    }
+
+    .service-image-container {
+        position: relative;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(auto-fit, 50%);
+    }
+
+    .gallery-image {
+        height: min(25rem, 50vw);
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+
+    .testimonials-cards-container {
+        flex-direction: column;
+    }
+
+    .testimonial-container {
+        margin: 2rem 0;
+    }
+    .testimonials-container {
+        padding: 5rem 0 7rem;
+    }
+
+    .service-container {
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+
+    .service-text-container {
+        align-items: center;
+        text-align: center;
+    }
+}
