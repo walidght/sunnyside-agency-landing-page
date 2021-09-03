@@ -1,0 +1,80 @@
+.service-container {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.service-container h2,
+.service-container a {
+    font-family: 'Fraunces', serif;
+}
+
+.service-container h2 {
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 0;
+    color: hsl(212, 27%, 19%);
+}
+
+.service-container p {
+    color: hsl(210, 4%, 67%);
+    line-height: 1.7rem;
+    margin: 2.5rem 0;
+}
+
+.service-text-container,
+.service-image-container {
+    width: 50%;
+}
+
+.service-text-container {
+    padding: 10% 5% 10% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-image-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.service-container a {
+    width: max-content;
+    position: relative;
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+}
+
+.service-container-yellow::before,
+.service-container-red::before {
+    position: absolute;
+    bottom: -10%;
+    left: -5%;
+    border-radius: 1rem;
+    content: '';
+    z-index: -1;
+    width: 110%;
+    height: 40%;
+}
+
+.service-container-yellow::before {
+    background-color: hsl(51, 100%, 49%, 0.4);
+}
+
+.service-container-red::before {
+    background-color: hsl(7, 99%, 70%, 0.4);
+}
+
+.service-container-yellow:hover::before {
+    background-color: hsl(51, 100%, 49%);
+}
+
+.service-container-red:hover::before {
+    background-color: hsl(7, 99%, 70%);
+}

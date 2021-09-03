@@ -1,0 +1,32 @@
+nav {
+    position: absolute;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#logo {
+    margin-right: auto;
+    margin-left: 3rem;
+}
+
+nav a {
+    color: hsl(0, 0%, 100%);
+    margin-right: 3rem;
+}
+
+nav #nav-contact-button {
+    font-weight: 900;
+    padding: 1rem 2rem;
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 27%, 19%);
+    border-radius: 2rem;
+}
+
+nav #nav-contact-button:hover {
+    background-color: hsl(0, 0%, 100%, 0.3);
+    color: hsl(0, 0%, 100%);
+}
