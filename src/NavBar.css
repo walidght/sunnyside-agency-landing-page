@@ -30,3 +30,59 @@ nav #nav-contact-button:hover {
     background-color: hsl(0, 0%, 100%, 0.3);
     color: hsl(0, 0%, 100%);
 }
+
+nav button {
+    margin-right: 3rem;
+}
+
+.nav-mobile {
+    display: none;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.mobile-nav-container {
+    position: absolute;
+    display: none;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    top: 8rem;
+    background: hsl(0, 0%, 100%);
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-nav-container a {
+    color: hsl(210, 4%, 67%);
+    margin-top: 3rem;
+}
+
+#nav-contact-button-mobile {
+    margin: 3rem 0;
+    background-color: hsl(49, 100%, 50%);
+    color: hsl(212, 27%, 19%);
+    padding: 1.5rem 2.5rem;
+    border-radius: 3rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+
+@media (max-width: 750px) {
+    .nav-pc {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: inline-block;
+    }
+
+    .mobile-nav-container {
+        display: flex;
+    }
+}
